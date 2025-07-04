@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gerador de Nitro</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    // Bloqueia o botão direito do mouse
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script>
+</head>
+<body>
+  <div class="fumaça-fundo"></div>
+
+  <a href="dev.html" class="dev-link">Dev</a>
+
+  <div class="container">
+    <h2 class="logo-text">Gerador de Nitro</h2>
+
+    <input type="text" id="webhookInput" placeholder="Cole seu webhook aqui" />
+
+    <div class="button-group">
+      <button onclick="gerarLink()">Gerar Link de Nitro</button>
+    </div>
+
+    <p id="notificacao" style="color: #0f0; font-weight: bold; margin-top: 10px; min-height: 20px;"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
